@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="TimTheDriver — racing, gaming and Hill Climb Racing 2 videos.">
+  <title>TimTheDriver | Official Website</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b1020;
+      color: #f4f7ff;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, 90%); margin: auto; }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+    }
+    .logo { font-size: 1.2rem; font-weight: 900; letter-spacing: 1px; }
+    .logo span, .accent { color: #35d9f5; }
+    nav { display: flex; gap: 22px; font-size: .92rem; }
+    nav a:hover { color: #35d9f5; }
+    .hero {
+      min-height: 520px;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 36px;
+      padding: 55px 0 70px;
+    }
+    .eyebrow {
+      color: #35d9f5;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.7rem);
+      line-height: .98;
+      letter-spacing: -3px;
+      margin: 18px 0;
+    }
+    h1 span { color: #35d9f5; }
+    .intro { max-width: 520px; color: #b8c4d9; font-size: 1.05rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 13px 20px;
+      border-radius: 9px;
+      font-weight: 800;
+      background: #e52d27;
+      color: white;
+    }
+    .btn.secondary { background: #19253a; border: 1px solid #34445e; }
+    .art {
+      min-height: 330px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #26344c;
+      border-radius: 24px;
+      background:
+        radial-gradient(ellipse at 50% 40%, #183b56 0%, #111b32 45%, #101626 75%);
+      overflow: hidden;
+      position: relative;
+    }
+    .art::before {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      border: 2px solid #35d9f5;
+      border-radius: 50%;
+      opacity: .25;
+    }
+    .art-content { position: relative; text-align: center; padding: 24px; }
+    .art-icon { font-size: clamp(5rem, 12vw, 8rem); line-height: 1.2; }
+    .art-content p { color: #b8c4d9; margin-bottom: 0; }
+    section { padding: 55px 0; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 10px; }
+    .muted { color: #aebbd0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .card {
+      background: #121b2e;
+      border: 1px solid #24334a;
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .card-icon { font-size: 2rem; }
+    .card h3 { margin: 12px 0 6px; }
+    .card p { color: #aebbd0; margin-bottom: 0; }
+    .community {
+      background: linear-gradient(120deg, #13253b, #101626);
+      border: 1px solid #263a52;
+      border-radius: 20px;
+      padding: clamp(24px, 5vw, 48px);
+      text-align: center;
+    }
+    footer {
+      border-top: 1px solid #243047;
+      padding: 26px 0;
+      color: #8e9db5;
+      font-size: .85rem;
+    }
+    @media (max-width: 760px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav { flex-wrap: wrap; gap: 14px; }
+      .hero { grid-template-columns: 1fr; min-height: auto; padding: 42px 0; }
+      .art { min-height: 250px; }
+      .cards { grid-template-columns: 1fr; }
+      h1 { letter-spacing: -1.5px; }
+    }
+    @media (min-width: 761px) and (max-width: 1000px) {
+      .hero { gap: 22px; }
+      .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="logo" href="#">TIM<span>THE</span>DRIVER</a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#content">Content</a>
+      <a href="#community">YouTube</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow">GAMING • RACING • ACTION</div>
+        <h1>BUILT TO RACE.<br><span>BORN TO DRIVE.</span></h1>
+        <p class="intro">
+          Welcome to TimTheDriver — your place for gaming,
+          racing adventures and exciting moments. Start the engines!
+        </p>
+        <div class="actions">
+          <a class="btn" href="https://www.youtube.com/@TimTheDriver"
+             target="_blank" rel="noopener noreferrer">▶ WATCH ON YOUTUBE</a>
+          <a class="btn secondary" href="#content">EXPLORE</a>
+        </div>
+      </div>
+      <div class="art" aria-label="Gaming themed artwork">
+        <div class="art-content">
+          <div class="art-icon">🏁</div>
+          <div class="eyebrow">READY • SET • GO</div>
+          <p>Every race has a story.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="wrap">
+      <div class="eyebrow">WELCOME TO MY WORLD</div>
+      <h2 class="section-title">More than just a game.</h2>
+      <p class="muted">
+        Discover the channel, explore the videos and join the ride.
+        New challenges, memorable moments and more racing action await.
+      </p>
+    </section>
+
+    <section id="content" class="wrap">
+      <div class="eyebrow">WHAT YOU'LL FIND HERE</div>
+      <h2 class="section-title">Choose your adventure.</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">🏎️</div>
+          <h3>Racing & Gaming</h3>
+          <p>Gaming sessions, races and exciting challenges.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Records & Challenges</h3>
+          <p>Big goals, close calls and the drive to improve.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎬</div>
+          <h3>Videos & Live</h3>
+          <p>Visit the YouTube channel to watch the latest content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="community" class="wrap">
+      <div class="community">
+        <div class="eyebrow">YOUR NEXT RACE STARTS HERE</div>
+        <h2 class="section-title">Join the TimTheDriver community.</h2>
+        <p class="muted">Watch the videos and follow the journey on YouTube.</p>
+        <div class="actions" style="justify-content:center">
+          <a class="btn" href="https://www.youtube.com/@TimTheDriver"
+             target="_blank" rel="noopener noreferrer">▶ VISIT MY CHANNEL</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> TimTheDriver · Creator website</div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
